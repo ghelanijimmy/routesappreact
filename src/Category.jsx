@@ -4,7 +4,7 @@ import { Link, Route } from "react-router-dom";
 const Category = ({ match }) => {
   return (
     <div>
-      {" "}
+      {"Categories:"}
       <ul>
         <li>
           <Link to={`${match.url}/shoes`}>Shoes</Link>
@@ -18,12 +18,15 @@ const Category = ({ match }) => {
       </ul>
       <Route
         path={`${match.path}/:name`}
-        render={({ match }) => (
-          <div>
-            {" "}
-            <h3> {match.params.name} </h3>
-          </div>
-        )}
+        render={
+            ({ match }) => (
+            <div>
+              {"Category:"}
+              {console.log(match)}
+              <h3> {match.params.name} </h3>
+            </div>
+          )
+        }
       />
     </div>
   );
