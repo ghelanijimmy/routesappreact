@@ -23,7 +23,7 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/category" component={Category} />          
+          <Route path="/category" component={Category} />
           <Route path="/products" component={Products} />
         </Switch>
       </div>
@@ -35,7 +35,23 @@ class App extends Component {
 //Home component
 const Home = props => (
   <div>
-    <h2>Home {console.log(props)}</h2>
+    <div className="heroBackground">
+      <h2>Home {console.log(props)}</h2>
+    </div>
+    <section className="flexDisplay">
+      <div className="row">
+        <h1>Heading 1</h1>
+        <p className="paragraphCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum leo metus, eu interdum lacus sodales et. Aliquam in metus a felis varius ullamcorper. In laoreet sapien vitae erat feugiat sagittis. Duis venenatis consequat scelerisque. Sed pretium, ipsum lacinia mattis consectetur, lorem lorem dictum est, eu facilisis ipsum lectus sed risus. Phasellus molestie rhoncus porta. Cras a auctor dolor. Maecenas mollis sit amet nunc eu vestibulum. Donec congue metus justo, sit amet bibendum justo gravida sollicitudin. Integer eget dapibus nibh. Proin vulputate maximus scelerisque.</p>
+      </div>
+    </section>
+    <section className="flexDisplay">
+      <div className="row halfRow">
+        <img src="https://placehold.it/500x500"></img>
+      </div>
+      <div className="row halfRow">
+        <h2>Heading</h2>
+      </div>
+    </section>
   </div>
 );
 

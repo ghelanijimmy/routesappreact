@@ -22,6 +22,14 @@
   font-size: large;
 }
 
+/*GENERAL*/
+* {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
 /*NAV*/
 nav.navbar.navbar .nav li {
     list-style: none;
@@ -31,6 +39,56 @@ nav.navbar.navbar .nav {
     display: flex;
     justify-content: space-around;
 }
+
+/****HERO***/
+.heroBackground {
+    background-image: url(https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.heroBackground h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5em;
+    margin: 0;
+}
+
+
+/****ROW GENERAL***/
+.paragraphCenter {
+  max-width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.row h1 {
+  text-align: center;
+}
+
+/******FLEX******/
+section.flexDisplay .row.halfRow {
+    flex-basis: 50%;
+}
+section.flexDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2% 0;
+}
+
+
+
+
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
