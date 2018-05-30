@@ -84,7 +84,9 @@ section.flexDisplay {
     padding: 2% 0;
 }
 
-
+.halfRow img {
+  width: 100%;
+}
 
 
 

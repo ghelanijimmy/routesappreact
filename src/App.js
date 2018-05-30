@@ -46,7 +46,7 @@ const Home = props => (
     </section>
     <section className="flexDisplay">
       <div className="row halfRow">
-        <img src="https://placehold.it/500x500"></img>
+        <img src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></img>
       </div>
       <div className="row halfRow">
         <h2>Heading</h2>
