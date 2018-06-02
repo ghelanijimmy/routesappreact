@@ -36,7 +36,7 @@ class App extends Component {
 const Home = props => (
   <div>
     <div className="heroBackground">
-      <h2>Home {console.log(props)}</h2>
+      <h2>Home</h2>
     </div>
     <section className="flexDisplay">
       <div className="row">
